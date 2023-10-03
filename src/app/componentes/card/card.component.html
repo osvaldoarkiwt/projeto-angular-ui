@@ -1,0 +1,10 @@
+<div id="produto-painel">
+    <div class="card" *ngFor="let produto of lista">
+        <!--<img src="" alt="Denim Jeans" style="width:100%">-->
+        <h1>{{produto.codigo}}</h1>
+        <p class="price">{{produto.nome}}</p>
+        <p class="price">{{produto.preco}}</p>
+        <p>{{produto.descricao}}</p>
+        <p><button (click)="verLista()">Add to Cart</button></p>
+    </div>
+</div>
